@@ -6,6 +6,7 @@ import {
   Skeleton,
   SkeletonText,
 } from '@chakra-ui/react';
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { useState } from 'react';
 
 interface Card {
@@ -21,7 +22,7 @@ interface CardProps {
 }
 
 export function Card({ data, viewImage }: CardProps): JSX.Element {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
 
   return (
     <Box key={data.ts} borderRadius="md" bgColor="pGray.800">
